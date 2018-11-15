@@ -1,0 +1,238 @@
+body {
+  background: url('../img/ellie.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+}
+
+p {
+  color: #fff;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+a[href^="mailto:"]:hover,
+a[href^="tel:"]:hover,
+.socialMedia a {
+  color: #fff;
+  text-decoration: none;
+  opacity: .5;
+}
+
+/* =================================
+  ABOUT CONTENT
+==================================== */
+
+div.aboutContent * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.aboutContent {
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.aboutContent h2 {
+  color: #fff;
+  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 5px;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutContent h3 {
+  color: #fff;
+  font-family: 'Julius Sans One', sans-serif;
+  padding-left: 0;
+  font-size: 15px;
+  text-align: center;
+  padding: 0;
+}
+
+.aboutContent p {
+  font-weight: 100;
+  opacity: .8;
+}
+
+.xxellie {
+  font-family: 'League Script', cursive;
+  text-align: right;
+  width: 85%;
+  font-size: 27px;
+}
+
+
+/* =================================
+  CONTACT CONTENT
+==================================== */
+
+.contactEllieDiv p, .contactEllieDiv a {
+  line-height: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.contactEllieDiv {
+  text-align: center;
+}
+
+.contactEllieDiv img {
+  display: none;
+}
+
+/*adds more space on the bottom*/
+.placeholder {
+  height: 570px;
+}
+
+
+/*   SOCIAL MEDIA ICONS IN CONTACTS   */
+.contactMedia ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.contactMedia li {
+  display: inline-block;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contactMedia a {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.contactMedia a:hover {
+  color: #fff;
+}
+
+
+/*  MAIL/CELL ICONS IN CONTACTS   */
+a.mail:before,
+a.cell:before {
+  color: #fff;
+}
+
+
+
+/* =================================
+  FOOTER
+==================================== */
+
+footer {
+  background: transparent;
+  posistion: absolute;
+  bottom: 0;
+}
+
+footer p, .socialMedia {
+  display: none;
+}
+
+/* =================================
+  MEDIA QUERIES
+==================================== */
+
+@media (min-width: 769px) {
+  body {
+    height: 200vh;
+  }
+  .meetEllieDiv h2, .contactEllieDiv h2 {
+    padding-bottom: 0;
+    font-size: 20px;
+  }
+  p {
+    padding-top: 20px;
+  }
+  .aboutContent {
+    margin-top: 200px;
+    padding: 30px;
+    min-width: 450px;
+  }
+  .meetEllieDiv p {
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  .xxellie p {
+    padding-left: 50px;
+  }
+  .contactEllieDiv p, {
+    margin: 0;
+    text-align: center;
+  }
+  .contactEllieDiv ul {
+    margin-top: 10px;
+  }
+  .contactEllieDiv img {
+    /* padding: 25px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    filter: opacity(.9) contrast(1.5); */
+
+    display: none;
+  }
+
+}
+
+  @media (min-width: 1041px) {
+    div.aboutContent {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    header img {
+      margin: 0;
+      padding: 0;
+    }
+    .aboutContent {
+      width: 75%;
+      display: flex;
+    }
+    .aboutContent h2 {
+      text-align: left;
+      padding-left: 0;
+      font-size: 30px;
+    }
+    .aboutContent h3 {
+      text-align: left;
+    }
+    .aboutContent p {
+      font-size: 17px;
+      font-weight: lighter;
+      padding-left: 0;
+    }
+    .aboutContent .xxellie {
+      font-size: 30px;
+    }
+    .meetEllieDiv {
+      flex: 1;
+    }
+    .meetEllieDiv p {
+      padding-right: 50px;
+    }
+    .contactEllieDiv {
+      width: 340px;
+      line-height: 27px;
+    }
+    .contactEllieDiv img {
+      padding: 25px;
+      width: 300px;
+      display: block;
+      margin: 0 auto;
+      filter: opacity(.9) contrast(1.5);
+    }
+
+    .contactEllieDiv .facebook {
+      padding-left: 0;
+    }
+
+
+  }

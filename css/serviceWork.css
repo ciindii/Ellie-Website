@@ -1,0 +1,264 @@
+/*================LARGE SCREEN NAVIGATION==============*/
+/* #CAEAE4; */
+/*GLOBAL*/
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  background: linear-gradient( rgba(202,232,234, 1), rgba(0,0,0,0));
+  height: 100%;
+}
+
+.tableWrapper {
+  padding: 100px 170px;
+  margin-top: -300px;
+  margin: 0 auto;
+}
+
+footer {
+  opacity: 1;
+}
+
+/* TEXT STYLES */
+span {
+  font-size: 12px;
+  color: #777777;
+}
+
+p {
+  margin-top: 20px;
+}
+
+.sideNote {
+  padding: 10px;
+  margin-bottom: 100px;
+}
+.sideNote {
+  background-color: #fff;
+}
+
+.sideNote p {
+  text-align: left;
+  letter-spacing: .5px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.policyDiv p,
+.aftercare p,
+.serviceDescription p {
+  color:  #666666;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.hour {
+  font-family: 'Julius Sans One', serif;
+  font-size: 12px;
+  padding-bottom: 25px;
+  margin-top: -5px;
+}
+
+/*GLOBAL*/
+/* END*/
+
+
+/* HEADING STYLES */
+
+.eyelashPriceHeading,
+.makeupPriceHeading,
+.policy,
+.aftercare h2,
+.serviceDescription h2{
+  font-family: 'Julius Sans One', serif;
+  font-size: 20px;
+  padding-bottom: 0px;
+  color: #444444;
+  background-color: transparent;
+}
+
+.serviceDescription h2 {
+  padding-bottom: -0;
+}
+
+.policyDiv h3,
+.aftercare h3 {
+  font-size: 15px;
+  font-family: 'Julius Sans One', serif;
+  padding-bottom: 15px;
+  color: #444444;
+}
+
+/* heading styles*/
+/* END */
+
+/* TABLE STYLES*/
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin:  0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #fff;
+  border: 1px solid #FBFBFB;
+  padding: .35em;
+}
+
+
+/* makes the service item stand out*/
+table td:first-child {
+  font-family: 'Julius Sans One', serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 4px;
+  color: #52D4CF;
+  padding: 10px;
+}
+
+td::before {
+  font-family: 'Julius Sans One', serif;
+}
+
+td {
+  padding: 10px;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 1em;
+  text-align: center;
+}
+
+table tr {
+  text-align: center;
+  font-family: 'Poiret One', serif;
+}
+
+.policyDiv,
+.aftercare,
+.serviceDescription
+{
+  padding: 17px;
+  background-color: rgba(255,255,255, .8)
+}
+
+.serviceDescription {
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+
+.serviceDescription p {
+  padding-bottom: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: #52D4CF;
+}
+
+.callLink,
+.callLink:hover,
+.dirtyLashLink,
+a[href^="mailto:"]:hover,
+a[href^="tel:"]:hover {
+  color: #52D4CF;
+  text-decoration: none;
+}
+
+.callLink:before {
+  content: "\f095";
+  font-family: 'FontAwesome';
+}
+
+/*FOOTER*/
+a[href^="mailto:"],
+a[href^="tel:"] {
+  color: #ccc;
+  font-size: 12px;
+}
+/* END */
+
+
+
+
+@media screen and (max-width: 1060px) {
+  .tableWrapper {
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 651px) {
+
+
+  .tableWrapper {
+    padding: 40px;
+  }
+
+  .tableWrapper p {
+    text-align: left;
+  }
+
+  .sideNote {
+    line-height: normal;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .tableWrapper {
+    padding: 34px;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: left;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: right;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
