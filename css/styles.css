@@ -50,6 +50,7 @@ p {
 a {
   text-decoration: none;
   color: #fff;
+  transition: opacity 0.4s ease-out;
 }
 
 img {
@@ -71,6 +72,7 @@ img {
   width: 100px;
   padding: 10px 20px;
   position: fixed;
+  display: block;
 }
 
 /*================SMALL SCREEN NAVIGATION==============*/
@@ -175,7 +177,7 @@ img {
 
 .socialMedia li {
   display: inline-block;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .socialMedia li:last-child {
@@ -228,7 +230,7 @@ img {
 .facebook:hover, .instagram:hover, .yelp:hover {
   text-decoration: none;
   color: #52D4D5;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .callLink:hover, a[href^="mailto:"]:hover, a[href^="tel:"]:hover {
