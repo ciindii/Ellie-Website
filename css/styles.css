@@ -73,6 +73,7 @@ img {
   padding: 10px 20px;
   position: fixed;
   display: block;
+  z-index: 9999;
 }
 
 /*================SMALL SCREEN NAVIGATION==============*/
@@ -156,6 +157,25 @@ img {
 
 /*================SOCIAL MEDIA ICONS/FOOTER==============*/
 
+footer {
+  text-align: center;
+  padding: 10px 0 0 0;
+  color: #767676;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Julius Sans One'
+}
+
+footer p {
+  background-color: rgb(202, 232, 234);
+  padding: 10px;
+}
+
+footer ul {
+  margin-bottom: 0;
+}
+
 .socialMedia, footer p {
   margin: 0 auto;
   width: 100%;
@@ -167,12 +187,9 @@ img {
   display: block;
   padding: 10px;
   margin: 0 auto;
-  width: 85%;
   color: #000;
   opacity: 0.9;
   background-color: rgb(202, 232, 234);
-  margin-top: -10px;
-  margin-bottom: 10px;
 }
 
 .socialMedia li {
@@ -190,20 +207,6 @@ img {
   font-size: 25px;
   color: #fff;
   text-decoration: none;
-}
-
-.cell:before {
-  content: "\f095";
-  font-family: FontAwesome;
-  padding-right: 5px;
-  color: #fff;
-}
-
-.mail:before {
-  content: "\f0e0";
-  font-family: FontAwesome;
-  padding-right: 5px;
-  color: #fff;
 }
 
 .socialMedia p, .socialMedia .cell, .socialMedia .mail {
@@ -229,8 +232,8 @@ img {
 
 .facebook:hover, .instagram:hover, .yelp:hover {
   text-decoration: none;
-  color: #52D4D5;
-  opacity: 0.4;
+  color: #fff;
+  opacity: .5;
 }
 
 .callLink:hover, a[href^="mailto:"]:hover, a[href^="tel:"]:hover {
@@ -239,31 +242,33 @@ img {
 }
 
 .contactBtn li a {
-  font-family: 'Julius Sans One', sans-serif;
-  display: block;
-  padding: 10px;
-  margin: 5px auto;
-  width: 85%;
-  color: #666666;
+  font-family: 'helvetica', sans-serif;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  color: #ccc;
   opacity: 0.9;
   background-color: rgb(202, 232, 234);
   text-align: center;
 }
 
-footer {
-  text-align: center;
-  padding: 10px 0 0 0;
-  position: absolute;
-  color: #767676;
-  background-color: #fff;
-  width: 100%;
-  /* font-family: 'helvetica neue'; */
-  font-family: 'Julius Sans One'
+.contactBtn ul {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(202, 232, 234);
 }
 
-footer p {
-  background-color: rgb(202, 232, 234);
-  padding: 10px;
+.cell:before {
+  content: "\f095";
+  font-family: FontAwesome;
+  padding-right: 5px;
+  color: #fff;
+}
+
+.mail:before {
+  content: "\f0e0";
+  font-family: FontAwesome;
+  padding-right: 5px;
+  color: #fff;
 }
 
 /* =================================
@@ -285,10 +290,12 @@ footer p {
 .flowerBg {
   margin: 0;
   background: url('../img/aqua.jpg') center fixed;
-  background-size: cover;
+  /* background-size: cover;
   background-repeat: no-repeat;
-  height: 570px;
-
+  height: 570px; */
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hr1 {
