@@ -160,16 +160,13 @@ img {
 footer {
   text-align: center;
   padding: 10px 0 0 0;
-  color: #767676;
+  color: #fff;
   background-color: #fff;
   width: 100%;
   margin: 0 auto;
-  font-family: 'Julius Sans One'
-}
-
-footer p {
+  font-family: 'Julius Sans One';
   background-color: rgb(202, 232, 234);
-  padding: 10px;
+  position: absolute;
 }
 
 footer ul {
@@ -177,19 +174,40 @@ footer ul {
 }
 
 .socialMedia, footer p {
-  margin: 0 auto;
   width: 100%;
+}
+
+.copyright p{
+  font-size: .8em;
+  padding-top: 50px;
+}
+
+.contactBtn p,
+.socialMedia p {
+  padding-top: 20px;
+}
+
+/* SOCIAL MEDIA ICON STYLES (.socialMedia is the DIV) */
+
+.socialMedia a {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.socialMedia p,
+.socialMedia .cell,
+.socialMedia .mail {
+  font-size: 15px;
 }
 
 .socialMedia ul {
   list-style: none;
   text-align: center;
   display: block;
-  padding: 10px;
   margin: 0 auto;
   color: #000;
   opacity: 0.9;
-  background-color: rgb(202, 232, 234);
 }
 
 .socialMedia li {
@@ -201,18 +219,7 @@ footer ul {
   padding-right: 0px;
 }
 
-/* social media icon styles*/
-
-.socialMedia a {
-  font-size: 25px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.socialMedia p, .socialMedia .cell, .socialMedia .mail {
-  font-size: 15px;
-}
-
+/* social media icons */
 .facebook:before {
   content: "\f082";
   font-family: FontAwesome;
@@ -230,33 +237,33 @@ footer ul {
   padding-right: 0px;
 }
 
+/* social media hover effects  */
 .facebook:hover, .instagram:hover, .yelp:hover {
   text-decoration: none;
   color: #fff;
   opacity: .5;
 }
 
-.callLink:hover, a[href^="mailto:"]:hover, a[href^="tel:"]:hover {
-  text-decoration: none;
-  opacity: .5;
-}
-
+/* PHONE NUMBER AND EMAIL STYLES */
 .contactBtn li a {
   font-family: 'helvetica', sans-serif;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  color: #ccc;
+  padding: 15px 15px;
+  color: #fff;
+  font-size: .9em;
   opacity: 0.9;
-  background-color: rgb(202, 232, 234);
-  text-align: center;
+  text-align: left;
 }
 
 .contactBtn ul {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(202, 232, 234);
+  display: block;
 }
 
+.contactBtn li{
+  height: 40px;
+  text-align: center;
+}
+
+/* email and phone icons */
 .cell:before {
   content: "\f095";
   font-family: FontAwesome;
@@ -269,6 +276,14 @@ footer ul {
   font-family: FontAwesome;
   padding-right: 5px;
   color: #fff;
+}
+
+/* hover effect for phone and email icons */
+.callLink:hover,
+a[href^="mailto:"]:hover,
+a[href^="tel:"]:hover {
+  text-decoration: none;
+  opacity: .5;
 }
 
 /* =================================
@@ -568,6 +583,33 @@ footer ul {
   }
   .time span {
     padding-right: 10px;
+  }
+
+  .cellhoverDiv span:after {
+    content: '206-778-6190';
+    transition: 0.7s;
+    opacity: 0;
+  }
+
+  .cellhoverDiv:hover span:after {
+    opacity: 1;
+  }
+
+  .cellhoverDiv:hover {
+    opacity: .8;
+    letter-spacing: 2px;
+  }
+
+  .contactBtn ul {
+    display: flex;
+    justify-content: ;
+    background-color: rgb(202, 232, 234);
+  }
+
+  .contactBtn ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(202, 232, 234);
   }
 }
 
