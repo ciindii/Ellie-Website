@@ -254,7 +254,7 @@ footer ul {
   font-family: 'helvetica', sans-serif;
   padding: 15px 15px;
   color: #fff;
-  opacity: 0.9;
+  opacity: 1;
   text-align: left;
 }
 
@@ -576,32 +576,64 @@ a[href^="tel:"]:hover {
     padding-left: 20px;
   }
 
-  .contactBtn li a {
-    float: right;
-    padding: 10px;
-    width: 230px;
-    color: #666666;
-    /* background-color: #fff; */
-    opacity: 0.9;
-    text-align: center;
-    font-size: 15px;
+  .contactBtn {
+    width: 30%;
+    margin-left: 30px;
   }
 
-/* number shows when hovering icon */
+  .socialMedia {
+    margin-left: 30px;
+  }
+
+  .contactBtn ul {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: rgb(202, 232, 234);
+  }
+
+  .contactBtn li a {
+    float: none;
+    padding: 10px;
+    color: #666666;
+    text-align: left;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+  }
+
+  .contactBtn p,
+  .socialMedia p {
+    text-align: left;
+
+  }
+
+
+
+/* text shows when hovering icon */
   .cellhoverDiv span:after {
-    content: '206-778-6190';
+    content: '  206-778-6190';
     transition: 0.7s;
     opacity: 0;
     color: #666;
   }
 
-  .cellhoverDiv:hover span:after {
+  .mailhoverDiv span:after {
+    content: '  elliebeautyhouse@gmail.com';
+    transition: 0.7s;
+    opacity: 0;
+    color: #666;
+    text-align: left;
+  }
+
+  .cellhoverDiv:hover span:after,
+  .mailhoverDiv:hover span:after {
     opacity: 1;
   }
 
-  .cellhoverDiv:hover {
+  .cellhoverDiv:hover,
+  .mailhoverDiv:hover {
     opacity: .8;
-    letter-spacing: 2px;
   }
 /* END */
 
@@ -615,17 +647,6 @@ a[href^="tel:"]:hover {
   }
 /* END */
 
-  .contactBtn ul {
-    display: flex;
-    justify-content: left;
-    background-color: rgb(202, 232, 234);
-  }
-
-  .contactBtn ul {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(202, 232, 234);
-  }
 }
 
 @media (min-width: 1030px) {
