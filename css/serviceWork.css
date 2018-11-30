@@ -166,9 +166,7 @@ a {
 
 .callLink,
 .callLink:hover,
-.dirtyLashLink,
-a[href^="mailto:"]:hover,
-a[href^="tel:"]:hover {
+.dirtyLashLink {
   color: #52D4CF;
   text-decoration: none;
 }
@@ -179,11 +177,8 @@ a[href^="tel:"]:hover {
 }
 
 /*FOOTER*/
-a[href^="mailto:"],
-a[href^="tel:"] {
-  color: #ccc;
-  font-size: 12px;
-}
+
+
 /* END */
 
 

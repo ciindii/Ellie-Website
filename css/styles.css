@@ -244,12 +244,16 @@ footer ul {
   opacity: .5;
 }
 
+/* hides the large screen contact style links */
+.lg-contactBtn li{
+  display: none;
+}
+
 /* PHONE NUMBER AND EMAIL STYLES */
 .contactBtn li a {
   font-family: 'helvetica', sans-serif;
   padding: 15px 15px;
   color: #fff;
-  font-size: .9em;
   opacity: 0.9;
   text-align: left;
 }
@@ -276,6 +280,11 @@ footer ul {
   font-family: FontAwesome;
   padding-right: 5px;
   color: #fff;
+}
+
+.contactBtn span{
+    color: #fff;
+    font-size: .9em;
 }
 
 /* hover effect for phone and email icons */
@@ -310,7 +319,7 @@ a[href^="tel:"]:hover {
   height: 570px; */
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 570px;
 }
 
 .hr1 {
@@ -363,6 +372,7 @@ a[href^="tel:"]:hover {
   font-family: 'Julius Sans One', sans-serif;
   outline: none;
   padding: 10px;
+
   text-align: center;
   transition: .98s;
   text-decoration: none;
@@ -517,35 +527,6 @@ a[href^="tel:"]:hover {
     margin-left: 30px;
   }
 
-  .socialMedia ul {
-    margin: -10px 0 10px 0;
-    background-color: transparent;
-    width: 30%;
-    text-align: left;
-  }
-  .socialMedia li:first-child {
-    padding-left: 20px;
-  }
-
-  .socialMedia a {
-    color: #444;
-  }
-  .contactBtn li a {
-    float: right;
-    padding: 10px;
-    width: 230px;
-    color: #666666;
-    background-color: #fff;
-    opacity: 0.9;
-    text-align: center;
-    font-size: 13px;
-  }
-  a.cell {
-    width: 200px;
-  }
-  .mail:before, .cell:before {
-    color: #666;
-  }
 }
 
 @media (min-width: 769px) {
@@ -585,10 +566,33 @@ a[href^="tel:"]:hover {
     padding-right: 10px;
   }
 
+  .socialMedia ul {
+    margin: -10px 0 10px 0;
+    background-color: transparent;
+    width: 30%;
+    text-align: left;
+  }
+  .socialMedia li:first-child {
+    padding-left: 20px;
+  }
+
+  .contactBtn li a {
+    float: right;
+    padding: 10px;
+    width: 230px;
+    color: #666666;
+    /* background-color: #fff; */
+    opacity: 0.9;
+    text-align: center;
+    font-size: 15px;
+  }
+
+/* number shows when hovering icon */
   .cellhoverDiv span:after {
     content: '206-778-6190';
     transition: 0.7s;
     opacity: 0;
+    color: #666;
   }
 
   .cellhoverDiv:hover span:after {
@@ -599,10 +603,21 @@ a[href^="tel:"]:hover {
     opacity: .8;
     letter-spacing: 2px;
   }
+/* END */
+
+/*  hide sm screen contact and show lg */
+  .sm-contactBtn li{
+    display: none;
+  }
+
+  .lg-contactBtn li {
+    display: block;
+  }
+/* END */
 
   .contactBtn ul {
     display: flex;
-    justify-content: ;
+    justify-content: left;
     background-color: rgb(202, 232, 234);
   }
 

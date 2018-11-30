@@ -27,33 +27,3 @@ window.onclick = function (event) {
     }
   }
 };
-
-$(function () {
-  var selectedClass = '';
-  $('.filter').click(function () {
-    selectedClass = $(this).attr('data-rel');
-    $('#gallery').fadeTo(100, 0.1);
-    $('#gallery div').not('.' + selectedClass).fadeOut().removeClass('animation');
-    setTimeout(function () {
-      $('.' + selectedClass).fadeIn().addClass('animation');
-      $('#gallery').fadeTo(300, 1);
-    }, 300);
-  });
-});
-
-
-function buildFuntion() {
-  var arr = [];
-  for (let i = 0; i < 3; i++) {
-    arr.push(function (j) {
-      return function () {
-        console.log(j);
-      };
-    }(i));
-  } return arr;
-}
-
-var fs = buildFunction();
-fs[0]();
-fs[1]();
-fs[2]();
