@@ -53,6 +53,10 @@ a {
   transition: opacity 0.4s ease-out;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -183,7 +187,8 @@ footer ul {
 }
 
 .contactBtn p,
-.socialMedia p {
+.socialMedia p,
+.info p {
   padding-top: 20px;
 }
 
@@ -249,8 +254,9 @@ footer ul {
   display: none;
 }
 
-/* PHONE NUMBER AND EMAIL STYLES */
-.contactBtn li a {
+/* LINKS & PHONE NUMBER AND EMAIL STYLES */
+.contactBtn li a,
+.info li a {
   font-family: 'helvetica', sans-serif;
   padding: 15px 15px;
   color: #fff;
@@ -258,13 +264,20 @@ footer ul {
   text-align: left;
 }
 
-.contactBtn ul {
+.contactBtn ul,
+.info ul {
   display: block;
 }
 
-.contactBtn li{
+.contactBtn li,
+.info li{
   height: 40px;
   text-align: center;
+}
+
+.info a:hover {
+  transition: opacity 0.4s ease-out;
+  text-decoration: none;
 }
 
 /* email and phone icons */
@@ -282,7 +295,8 @@ footer ul {
   color: #fff;
 }
 
-.contactBtn span{
+.contactBtn span,
+.info a {
     color: #fff;
     font-size: .9em;
 }
@@ -565,31 +579,46 @@ a[href^="tel:"]:hover {
   .time span {
     padding-right: 10px;
   }
-
   .socialMedia ul {
-    margin: -10px 0 10px 0;
+    margin: 10px 0 0 0;
     background-color: transparent;
     width: 30%;
     text-align: left;
   }
   .socialMedia li:first-child {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
+/*lg screen contact and social media divs  */
   .contactBtn {
     width: 30%;
+    float: left;
     margin-left: 30px;
+  }
+
+  .info {
+    float: left;
+    width: 30%;
   }
 
   .socialMedia {
     margin-left: 30px;
   }
+ /* END */
 
-  .contactBtn ul {
+/* footer links */
+  .contactBtn ul,
+  .info ul {
     display: flex;
     flex-direction: column;
     float: left;
     background-color: rgb(202, 232, 234);
+  }
+
+  .info a {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
   }
 
   .contactBtn li a {
@@ -603,11 +632,11 @@ a[href^="tel:"]:hover {
   }
 
   .contactBtn p,
-  .socialMedia p {
+  .socialMedia p,
+  .info p {
     text-align: left;
-
   }
-
+/* END */
 
 
 /* text shows when hovering icon */
@@ -646,6 +675,12 @@ a[href^="tel:"]:hover {
     display: block;
   }
 /* END */
+
+/* Info */
+
+  .info p {
+
+  }
 
 }
 
