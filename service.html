@@ -170,7 +170,7 @@
 
 
 
-    <div class="policyDiv">
+    <div id="policyDiv">
       <h2 class="policy">Policy</h2><hr>
       <h3>Cancellation:</h3>
       <p>Please keep in mind that there is a $50.00 non-refundable cancellation fee.<br> If you cannot make your appointment please give a 48 hour notice to cancel or reschedule. Less than a 48-hour notice will result a fee equal to 50% of your reserved
@@ -209,34 +209,72 @@
 
   <script src="scripts.js"></script>
   <footer>
-    <div class="contactBtn">
-      <p>contact</p>
-      <ul>
-        <li>
-          <div class="cellhoverDiv">
-            <a href="tel:206-778-6190" class="cell">
-              <span>(206)-778-6190</span>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="mailhoverDiv">
-            <a href="mailto:elliebeautyhouse@gmail.com" class="mail">
-              <span>elliebeautyhouse@gmail.com</span>
-            </a>
-          </div>
-        </li>
-      </ul>
+    <div class="footerFlex">
+      <!-- small screen contact div -->
+      <div class="contactBtn">
+        <p>contact</p>
+        <ul class="sm-contactBtn">
+          <li>
+            <div class="cellhoverDiv">
+              <a href="tel:206-778-6190" class="cell">
+                <span>(206)-778-6190<br></span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="mailhoverDiv">
+              <a href="mailto:elliebeautyhouse@gmail.com" class="mail">
+                <span>elliebeautyhouse@gmail.com</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!-- END -->
+        <!-- large screen contact div (hover effects) -->
+        <ul class="lg-contactBtn">
+          <li>
+            <div class="cellhoverDiv">
+              <a href="tel:206-778-6190" class="cell">
+                <span>call<br></span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="mailhoverDiv">
+              <a href="mailto:elliebeautyhouse@gmail.com" class="mail">
+                <span>email<br></span>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!-- END -->
+        </div>
+        <!-- infomation link div -->
+      <div class="info">
+        <p>Info</p>
+        <ul>
+          <li>
+            <a href="service.html#policyDiv" class="policy">policy</a>
+          </li>
+          <li>
+            <a href="services.html" class="pricing">pricing</a>
+          </li>
+        </ul>
+      </div>
+      <!-- END -->
+      <div class="clearfix"></div>
+      <!-- social media div -->
+      <div class="socialMedia flex-column clearfix">
+        <p>connect</p>
+        <ul>
+          <li><a href="https://www.facebook.com/duong.quynh.984" target="_blank" class="facebook"></a></li>
+          <li><a href="https://www.instagram.com/elliebeautyhouse/" target="_blank" class="instagram"></a></li>
+          <li><a href="https://www.yelp.com/biz/ellies-beauty-house-kent-2?osq=ellie+beauty+house" target="_blank" class="yelp"></a></li>
+        </ul>
+        <!-- END -->
+      </div>
     </div>
-    <div class="socialMedia flex-column clearfix">
-      <p>connect</p>
-      <ul>
-        <li><a href="https://www.facebook.com/duong.quynh.984" target="_blank" class="facebook"></a></li>
-        <li><a href="https://www.instagram.com/elliebeautyhouse/" target="_blank" class="instagram"></a></li>
-        <li><a href="https://www.yelp.com/biz/ellies-beauty-house-kent-2?osq=ellie+beauty+house" target="_blank" class="yelp"></a></li>
-      </ul>
-      <p class='copyright'>Ellie Beauty House &copy; 2018</p>
-    </div>
+    <p class='copyright'>Ellie Beauty House &copy; 2018</p>
   </footer>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </body>

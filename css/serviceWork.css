@@ -43,7 +43,7 @@ p {
   padding: 5px;
 }
 
-.policyDiv p,
+#policyDiv p,
 .aftercare p,
 .serviceDescription p {
   color:  #666666;
@@ -81,7 +81,7 @@ p {
   padding-bottom: -0;
 }
 
-.policyDiv h3,
+#policyDiv h3,
 .aftercare h3 {
   font-size: 15px;
   font-family: 'Julius Sans One', serif;
@@ -141,7 +141,7 @@ table tr {
   font-family: 'Poiret One', serif;
 }
 
-.policyDiv,
+#policyDiv,
 .aftercare,
 .serviceDescription
 {

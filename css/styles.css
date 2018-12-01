@@ -181,6 +181,10 @@ footer ul {
   width: 100%;
 }
 
+.copyright {
+  margin-top: 50px;
+}
+
 .copyright p{
   font-size: .8em;
   padding-top: 50px;
@@ -258,7 +262,7 @@ footer ul {
 .contactBtn li a,
 .info li a {
   font-family: 'helvetica', sans-serif;
-  padding: 15px 15px;
+  padding: 15px 0px;
   color: #fff;
   opacity: 1;
   text-align: left;
@@ -276,7 +280,8 @@ footer ul {
 }
 
 .info a:hover {
-  transition: opacity 0.4s ease-out;
+   opacity: .5;
+  transition: 0.4s ease-out;
   text-decoration: none;
 }
 
@@ -579,51 +584,45 @@ a[href^="tel:"]:hover {
   .time span {
     padding-right: 10px;
   }
-  .socialMedia ul {
-    margin: 10px 0 0 0;
-    background-color: transparent;
-    width: 30%;
-    text-align: left;
+
+  .footerFlex {
+    display: flex;
+    /* align-content: center;
+    padding: 50px;
+    justify-content: center; */
+      justify-content: center;
+
+
   }
-  .socialMedia li:first-child {
-    padding-left: 10px;
+
+  .copyright {
+    flex: none;
   }
 
 /*lg screen contact and social media divs  */
   .contactBtn {
-    width: 30%;
-    float: left;
-    margin-left: 30px;
+    width: 100px;
   }
 
   .info {
-    float: left;
-    width: 30%;
+    width: 100px;
+    margin: 0 50px 0 70px;
   }
 
   .socialMedia {
-    margin-left: 30px;
+    width: 150px;
   }
  /* END */
 
 /* footer links */
-  .contactBtn ul,
-  .info ul {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    background-color: rgb(202, 232, 234);
-  }
 
-  .info a {
-    margin-left: 0;
-    width: 100%;
-    padding: 10px;
+  .info li {
+    text-align: left;
   }
 
   .contactBtn li a {
     float: none;
-    padding: 10px;
+    padding: 0px;
     color: #666666;
     text-align: left;
     font-size: 1rem;
@@ -676,10 +675,9 @@ a[href^="tel:"]:hover {
   }
 /* END */
 
-/* Info */
-
-  .info p {
-
+/* social media */
+  .socialMedia ul {
+    text-align: left;
   }
 
 }
