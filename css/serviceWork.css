@@ -38,7 +38,7 @@ p {
 
 .sideNote p {
   text-align: left;
-  letter-spacing: .5px;
+  letter-spacing: .9px;
   margin: 0 auto;
   padding: 5px;
 }
@@ -50,6 +50,10 @@ p {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: lighter;
+}
+
+.lashTintPriceTable {
+    margin-bottom: 100px;
 }
 
 .hour {
@@ -67,6 +71,7 @@ p {
 
 .eyelashPriceHeading,
 .makeupPriceHeading,
+.lashTintHeading,
 .policy,
 .aftercare h2,
 .serviceDescription h2{
