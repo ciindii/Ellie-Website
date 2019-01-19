@@ -31,14 +31,13 @@ p {
 .sideNote {
   padding: 10px;
   margin-bottom: 100px;
-}
-.sideNote {
   background-color: #fff;
 }
 
 .sideNote p {
   text-align: left;
   letter-spacing: .9px;
+    opacity: .7;
   margin: 0 auto;
   padding: 5px;
 }
