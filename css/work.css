@@ -63,19 +63,29 @@ body, html {
   font-family: 'Julius Sans One';
   width: 80%;
   text-align: center;
-  margin: 100px auto;
+  margin: 100px auto 10px auto;
 }
 
-.morePhotos a {
-  color: #52D4D5;
+.seeMoreBtn{
+  width: 80%;
+  text-align: center;
+  margin: 20px auto 100px auto;
+}
+.seeMore {
+  font-family: 'Encode Sans Condensed', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #666;
+  padding: 10px 40px;
 }
-
-.morePhotos a:hover {
+.seeMore:hover {
   text-decoration: none;
-  color: #000;
+  border-bottom: 1px solid #888;
+  letter-spacing: 1.5px;
+  color: #666;
+  transition: .9s;
+  opacity: .8;
 }
 
 div.row{

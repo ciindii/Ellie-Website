@@ -259,8 +259,7 @@ footer ul {
 }
 
 /* LINKS & PHONE NUMBER AND EMAIL STYLES */
-.contactBtn li a,
-.info li a {
+.contactBtn li a {
   font-family: 'helvetica', sans-serif;
   padding: 15px 0px;
   color: #fff;
@@ -268,22 +267,15 @@ footer ul {
   text-align: left;
 }
 
-.contactBtn ul,
-.info ul {
+.contactBtn ul {
   display: block;
 }
 
-.contactBtn li,
-.info li{
+.contactBtn li {
   height: 40px;
   text-align: center;
 }
 
-.info a:hover {
-   opacity: .5;
-  transition: 0.4s ease-out;
-  text-decoration: none;
-}
 
 /* email and phone icons */
 .cell:before {
@@ -591,8 +583,7 @@ a[href^="tel:"]:hover {
   }
 
   /* LINKS & PHONE NUMBER AND EMAIL STYLES */
-  .contactBtn li a,
-  .info li a {
+  .contactBtn li a {
     font-family: 'helvetica', sans-serif;
     padding: 15px 0px;
     color: #fff;
@@ -602,21 +593,13 @@ a[href^="tel:"]:hover {
     text-align: left;
   }
 
-  .contactBtn ul,
-  .info ul {
+  .contactBtn {
     display: block;
   }
 
-  .contactBtn li,
-  .info li{
+  .contactBtn li {
     height: 40px;
     text-align: center;
-  }
-
-  .info a:hover {
-     opacity: .5;
-    transition: 0.4s ease-out;
-    text-decoration: none;
   }
 
   .copyright {
@@ -624,15 +607,6 @@ a[href^="tel:"]:hover {
   }
 
 /*lg screen contact and social media divs  */
-  .contactBtn {
-    width: 100px;
-  }
-
-  .info {
-    width: 100px;
-    margin: 0 50px 0 70px;
-  }
-
   .socialMedia {
     width: 150px;
   }
@@ -640,13 +614,9 @@ a[href^="tel:"]:hover {
 
 /* footer links */
 
-  .info li {
-    text-align: left;
-  }
-
   .contactBtn li a {
     float: none;
-    padding: 0px;
+    padding: 0;
     color: #666666;
     text-align: left;
     font-size: 1rem;
@@ -655,10 +625,11 @@ a[href^="tel:"]:hover {
   }
 
   .contactBtn p,
-  .socialMedia p,
-  .info p {
+  .socialMedia p {
     text-align: left;
   }
+
+
 /* END */
 
 

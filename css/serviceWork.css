@@ -72,14 +72,23 @@ p {
 .eyelashPriceHeading,
 .makeupPriceHeading,
 .lashTintHeading,
-.policy,
+.policyHeading,
 .aftercare h2,
-.serviceDescription h2{
-  font-family: 'Julius Sans One', serif;
+.serviceDescription h2 {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
   font-size: 20px;
   padding-bottom: 0px;
-  color: #444444;
+  color: #fff;
   background-color: transparent;
+}
+
+.policyHeading,
+.aftercare h2,
+.serviceDescription h2{
+  color: #444;
 }
 
 .serviceDescription h2 {
